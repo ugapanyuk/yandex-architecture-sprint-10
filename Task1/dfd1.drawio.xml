@@ -1,0 +1,39 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0" version="29.2.1">
+  <diagram name="DFD As-Is MedicaMente" id="DFD-MedicaMente-AsIs">
+    <mxGraphModel dx="1390" dy="791" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Patient1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Пациент" vertex="1">
+          <mxGeometry height="60" width="33.6" x="39.99999999999999" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Admin1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Администратор&#xa;(Ресепшен)" vertex="1">
+          <mxGeometry height="60" width="33.6" x="241.60000000000005" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ExcelPatients" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#dae8fc;strokeColor=#6c8ebf;size=15;" value="Excel: Список пациентов&#xa;(PII)" vertex="1">
+          <mxGeometry height="80" width="112.00000000000001" x="443.2" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="FolderScans" parent="1" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Папка:&amp;nbsp;&lt;br&gt;Сканы договоров&lt;br&gt;(PII + Паспорт)" vertex="1">
+          <mxGeometry height="80" width="123.20000000000002" x="443.2" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Flow1" edge="1" parent="1" source="Patient1" style="endArrow=classic;html=1;rounded=0;fontColor=#FF3333;" target="Admin1" value="Голос / Паспорт (PII)">
+          <mxGeometry height="50" relative="1" width="50" y="20" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="84.80000000000001" y="100" as="sourcePoint" />
+            <mxPoint x="219.20000000000002" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Flow2" edge="1" parent="1" source="Admin1" style="endArrow=classic;html=1;rounded=0;fontColor=#FF3333;" target="ExcelPatients" value="Ручной ввод (Plain Text)">
+          <mxGeometry relative="1" x="0.0455" y="33" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Flow3" edge="1" parent="1" source="Admin1" style="endArrow=classic;html=1;rounded=0;fontColor=#FF3333;" target="FolderScans" value="Сканирование договора">
+          <mxGeometry relative="1" x="0.1835" y="-42" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
