@@ -1,0 +1,109 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0" version="29.2.1">
+  <diagram name="Ishikawa Migration Risks V2" id="Ishikawa-Migration-V2">
+    <mxGraphModel dx="3184" dy="1147" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Spine" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeWidth=3;endFill=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="120" y="400" as="sourcePoint" />
+            <mxPoint x="960" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Problem" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=14;fontStyle=1;" value="Снижение производительности и сбои при миграции" vertex="1">
+          <mxGeometry height="60" width="180" x="-60" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="BoneInfra" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="280" y="400" as="sourcePoint" />
+            <mxPoint x="380" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CatInfra" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" value="ИНФРАСТРУКТУРА" vertex="1">
+          <mxGeometry height="30" width="150" x="350" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="BoneSoft" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="570" y="400" as="sourcePoint" />
+            <mxPoint x="670" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CatSoft" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" value="ПО / АРХИТЕКТУРА" vertex="1">
+          <mxGeometry height="30" width="160" x="640" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="BonePeople" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="280" y="400" as="sourcePoint" />
+            <mxPoint x="380" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CatPeople" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" value="ПЕРСОНАЛ" vertex="1">
+          <mxGeometry height="30" width="100" x="350" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="BoneInt" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="570" y="400" as="sourcePoint" />
+            <mxPoint x="670" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CatInt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" value="ИНТЕГРАЦИЯ" vertex="1">
+          <mxGeometry height="30" width="120" x="640" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="CatData" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" value="ДАННЫЕ" vertex="1">
+          <mxGeometry height="30" width="100" x="1000" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="CatProc" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" value="ПРОЦЕССЫ" vertex="1">
+          <mxGeometry height="30" width="110" x="1010" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="w6346lNim2CTVehXaOvJ-1" parent="1" style="text;whiteSpace=wrap;html=1;" value="Оверхед Kubernetes (CPU/RAM)" vertex="1">
+          <mxGeometry height="40" width="210" x="375" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="w6346lNim2CTVehXaOvJ-2" parent="1" style="text;whiteSpace=wrap;html=1;" value="Медленные диски для БД" vertex="1">
+          <mxGeometry height="40" width="180" x="335" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="w6346lNim2CTVehXaOvJ-3" parent="1" style="text;whiteSpace=wrap;html=1;" value="Нет навыков K8s/DevOps" vertex="1">
+          <mxGeometry height="40" width="170" x="330" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="w6346lNim2CTVehXaOvJ-4" parent="1" style="text;whiteSpace=wrap;html=1;" value="Сопротивление изменениям&amp;nbsp;&lt;br&gt;(привычка к Excel)" vertex="1">
+          <mxGeometry height="40" width="180" x="375" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="w6346lNim2CTVehXaOvJ-5" parent="1" style="text;whiteSpace=wrap;html=1;" value="Высокая сложность микросервисов" vertex="1">
+          <mxGeometry height="40" width="230" x="650" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="w6346lNim2CTVehXaOvJ-6" parent="1" style="text;whiteSpace=wrap;html=1;" value="Нагрузка из-за двойного ввода данных" vertex="1">
+          <mxGeometry height="40" width="250" x="620" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="w6346lNim2CTVehXaOvJ-7" parent="1" style="text;whiteSpace=wrap;html=1;" value="Сложность ETL-процесса" vertex="1">
+          <mxGeometry height="40" width="180" x="660" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="w6346lNim2CTVehXaOvJ-8" parent="1" style="text;whiteSpace=wrap;html=1;" value="1С в файловом режиме (блокировки)" vertex="1">
+          <mxGeometry height="40" width="240" x="620" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="w6346lNim2CTVehXaOvJ-9" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="960" y="400" as="sourcePoint" />
+            <mxPoint x="1060" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w6346lNim2CTVehXaOvJ-10" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="960" y="400" as="sourcePoint" />
+            <mxPoint x="1060" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w6346lNim2CTVehXaOvJ-11" parent="1" style="text;whiteSpace=wrap;html=1;" value="Отсутствие плана отката (Rollback)" vertex="1">
+          <mxGeometry height="40" width="230" x="1050" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="w6346lNim2CTVehXaOvJ-12" parent="1" style="text;whiteSpace=wrap;html=1;" value="Риск распределенных транзакций" vertex="1">
+          <mxGeometry height="40" width="220" x="1010" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="w6346lNim2CTVehXaOvJ-13" parent="1" style="text;whiteSpace=wrap;html=1;" value="Дубликаты и ошибки в Excel" vertex="1">
+          <mxGeometry height="40" width="190" x="1050" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="w6346lNim2CTVehXaOvJ-14" parent="1" style="text;whiteSpace=wrap;html=1;" value="Синхронные вызовы к медленным системам" vertex="1">
+          <mxGeometry height="40" width="280" x="1005" y="420" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

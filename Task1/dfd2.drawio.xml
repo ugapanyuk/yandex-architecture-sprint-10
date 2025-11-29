@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0" version="29.2.1">
+  <diagram name="Страница-1" id="2pwHArImr7W625xwRpvu">
+    <mxGraphModel dx="1151" dy="655" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="efwroLtNV_QugLY1BWsJ-12" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Врач" vertex="1">
+          <mxGeometry height="60" width="30" x="40" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="efwroLtNV_QugLY1BWsJ-13" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#dae8fc;strokeColor=#6c8ebf;size=15;" value="Excel: Список пациентов&#xa;(Чтение всех)" vertex="1">
+          <mxGeometry height="70" width="100" x="210" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="efwroLtNV_QugLY1BWsJ-14" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#f8cecc;strokeColor=#b85450;size=15;" value="Excel:&amp;nbsp;&lt;br&gt;Журнал врача&lt;br&gt;(PHI: Диагнозы)" vertex="1">
+          <mxGeometry height="80" width="120" x="360" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="efwroLtNV_QugLY1BWsJ-15" parent="1" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Папка пациента&lt;br&gt;(Word/PDF&amp;nbsp;&lt;br&gt;Заключения)" vertex="1">
+          <mxGeometry height="80" width="120" x="360" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="efwroLtNV_QugLY1BWsJ-16" edge="1" parent="1" source="efwroLtNV_QugLY1BWsJ-12" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#FF3333;" target="efwroLtNV_QugLY1BWsJ-13" value="Поиск пациента&lt;br&gt;(Возможен доступ&amp;nbsp;&lt;br&gt;ко всем пациентам)">
+          <mxGeometry relative="1" x="-0.1894" y="43" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="efwroLtNV_QugLY1BWsJ-17" edge="1" parent="1" source="efwroLtNV_QugLY1BWsJ-12" style="endArrow=classic;html=1;rounded=0;fontColor=#FF3333;" target="efwroLtNV_QugLY1BWsJ-14" value="Ввод диагноза (PHI)&#xa;Открытый текст">
+          <mxGeometry relative="1" x="0.1799" y="-20" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="efwroLtNV_QugLY1BWsJ-18" edge="1" parent="1" source="efwroLtNV_QugLY1BWsJ-12" style="endArrow=classic;html=1;rounded=0;fontColor=#FF3333;" target="efwroLtNV_QugLY1BWsJ-15" value="Сохранение файла">
+          <mxGeometry relative="1" x="-0.0242" y="-32" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

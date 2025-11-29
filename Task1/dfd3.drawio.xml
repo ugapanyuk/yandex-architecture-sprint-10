@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0" version="29.2.1">
+  <diagram name="Страница-1" id="He6aFoCCbObjLi9J4It1">
+    <mxGraphModel dx="2842" dy="1147" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8rPc_1ZaIR3o1lLP8QH2-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Внешняя Лаборатория" vertex="1">
+          <mxGeometry height="60" width="120" x="-40" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="8rPc_1ZaIR3o1lLP8QH2-22" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" value="Email Server&#xa;(Exchange)" vertex="1">
+          <mxGeometry height="80" width="90" x="230" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8rPc_1ZaIR3o1lLP8QH2-23" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Администратор" vertex="1">
+          <mxGeometry height="60" width="30" x="430" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="8rPc_1ZaIR3o1lLP8QH2-24" parent="1" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Папка:&amp;nbsp;&lt;br&gt;Реестр анализов&lt;br&gt;(Общий доступ)" vertex="1">
+          <mxGeometry height="80" width="110" x="600" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8rPc_1ZaIR3o1lLP8QH2-25" edge="1" parent="1" source="8rPc_1ZaIR3o1lLP8QH2-21" style="endArrow=classic;html=1;rounded=0;fontColor=#FF3333;" target="8rPc_1ZaIR3o1lLP8QH2-22" value="Email с PDF (PHI)">
+          <mxGeometry relative="1" x="-0.0667" y="20" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8rPc_1ZaIR3o1lLP8QH2-26" edge="1" parent="1" source="8rPc_1ZaIR3o1lLP8QH2-22" style="endArrow=classic;html=1;rounded=0;" target="8rPc_1ZaIR3o1lLP8QH2-23" value="Скачивание">
+          <mxGeometry relative="1" x="-0.0909" y="30" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8rPc_1ZaIR3o1lLP8QH2-27" edge="1" parent="1" source="8rPc_1ZaIR3o1lLP8QH2-23" style="endArrow=classic;html=1;rounded=0;fontColor=#FF3333;" target="8rPc_1ZaIR3o1lLP8QH2-24" value="Ручное копирование&#xa;файлов">
+          <mxGeometry relative="1" x="-0.1429" y="30" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
